@@ -12,7 +12,7 @@ export default function Home() {
           <Navbar />
 
           <section className="space-y-12 my-32 px-10 text-center">
-            <h1 className="text-7xl font-bold text-center">
+            <h1 className="text-7xl font-extrabold text-center">
               <span className="text-[#FED700]">Do Básico ao Avançado, </span>{" "}
               Nós <br /> Temos{" "}
               <span className="text-[#FED700]">Tudo para Sua Obra!</span>
