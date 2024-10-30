@@ -146,7 +146,7 @@ export default function Home() {
             </button>
           </section>
 
-          <section className="2xl:w-[calc(1640px+280px)] lg:w-[calc(1240px+200px)] 2xl:-ml-[240px] flex flex-col bg-gradient-to-b from-[#08221F] via-[#082D22] to-[#08221F] gap-8">
+          <section className="2xl:w-[calc(1640px+280px)] lg:w-[calc(1240px+200px)] 2xl:-ml-[260px] flex flex-col bg-gradient-to-b from-[#08221F] via-[#082D22] to-[#08221F] gap-8">
             <button className="py-4">
               <h2 className="text-[68px]">Missão</h2>
             </button>
