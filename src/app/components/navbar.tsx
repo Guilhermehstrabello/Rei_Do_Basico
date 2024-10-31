@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="flex items-center justify-between mx-24 px-5 py-4 bg-[#08221F] text-white">
       {/* Logo */}
       <div className="text-2xl font-bold">
-          <Image src="/Logo.png" width={100} height={100} alt="Logotipo" />
+        <Image src="/Logo.png" width={100} height={100} alt="Logotipo" />
       </div>
 
       {/* Links para telas médias e maiores */}
@@ -61,8 +61,9 @@ export default function Navbar() {
 
       {/* Botão de Comprar */}
       <div className="hidden md:block">
-        <button className="bg-[#0D6B4A] text-white py-2 px-4 rounded hover:bg-[#FF6600] transition duration-200">
-          Comprar
+        <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-10 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-10 flex items-center justify-center group w-[140px]">
+          Comprar!
+          <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
         </button>
       </div>
 

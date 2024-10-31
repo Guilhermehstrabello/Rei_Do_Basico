@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Accordion from "./components/accordition";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           <Navbar />
 
           <section className="space-y-12 my-32 px-10 text-center">
-            <h1 className="text-7xl font-extrabold text-center">
+            <h1 className="text-7xl font-bold text-center">
               <span className="text-[#FED700]">Do Básico ao Avançado, </span>{" "}
               Nós <br /> Temos{" "}
               <span className="text-[#FED700]">Tudo para Sua Obra!</span>
@@ -21,8 +22,12 @@ export default function Home() {
               Cada Material Pensado para Oferecer Qualidade e <br /> Eficiência
               em Todas as Fases da sua Obra.
             </p>
-            <button className="bg-[#0D6B4A] text-white px-10 py-4 text-lg font-bold rounded-md hover:bg-[#FF6600] transition duration-200">
-              Tenho Interesse!{" "}
+            <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]">
+              Tenho Interesse!
+              <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+                →
+              </span>
+              <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
           </section>
 
@@ -89,8 +94,12 @@ export default function Home() {
               </div>
             </div>
 
-            <button className="bg-[#0D6B4A] text-white px-10 py-4 text-lg font-bold rounded-md hover:bg-[#FF6600] transition duration-200">
-              Tenho Interesse!{" "}
+            <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]">
+              Tenho Interesse!
+              <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+                →
+              </span>
+              <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
           </section>
 
@@ -141,23 +150,15 @@ export default function Home() {
               </div>
             </div>
 
-            <button className="bg-[#0D6B4A] text-white px-10 py-4 text-lg font-bold rounded-md hover:bg-[#FF6600] transition duration-200">
+            <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]">
               Tenho Interesse!
+              <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+                →
+              </span>
+              <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
           </section>
-
-          <section className="2xl:w-[calc(1640px+280px)] lg:w-[calc(1240px+200px)] 2xl:-ml-[260px] flex flex-col bg-gradient-to-b from-[#08221F] via-[#082D22] to-[#08221F] gap-8">
-            <button className="py-4">
-              <h2 className="text-[68px]">Missão</h2>
-            </button>
-            <button className="py-4">
-              <h2 className="text-[68px]">Valores</h2>
-            </button>
-            <button className="py-4">
-              <h2 className="text-[68px]">Expertise</h2>
-            </button>
-          </section>
-
+          <Accordion /> 
           <section className="py-16 flex flex-col items-center gap-y-20">
             <div className="text-center mb-4">
               <h2 className="text-5xl font-bold text-white">
@@ -167,81 +168,84 @@ export default function Home() {
 
             <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-0 gap-2">
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Horário Extendido
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente1.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente Washington Silva"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Washington Silva
                   </h3>
-                  <p className="text-center">
-                    Estamos abertos das 8h às 20h, <br /> facilitando suas
-                    compras quando for <br /> mais conveniente para você.
+                  <p className="text-left">
+                    Atendimento Excelente e preço justo, sem contar que a equipe de atendimento é top.
                   </p>
                 </div>
               </div>
 
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Estoque Grande
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente2.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente Maria de Souza Bruneto"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Maria de Souza Bruneto
                   </h3>
-                  <p className="text-center">
-                    Com um estoque sempre <br /> completo, você encontra tudo o{" "}
-                    <br /> que precisa, sem perder tempo.
+                  <p className="text-left">
+                    Fui muito bem atendida por todos, recomendo.
                   </p>
                 </div>
               </div>
 
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Estoque Grande
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente3.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente Barbeiro Lion"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Barbeiro Lion
                   </h3>
-                  <p className="text-center">
-                    Com um estoque sempre <br /> completo, você encontra tudo o{" "}
-                    <br /> que precisa, sem perder tempo.
+                  <p className="text-left">
+                    Muito bom , muito além do básico .. E tem sim Suporte de vassoura Linha premium , top demais, obrigado pela gentileza e ótimo atendimento Marcos ! Ganharam mais um cliente …
                   </p>
                 </div>
               </div>
 
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Estoque Grande
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente4.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente Yara Lima"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Yara Lima
                   </h3>
-                  <p className="text-center">
-                    Com um estoque sempre <br /> completo, você encontra tudo o{" "}
-                    <br /> que precisa, sem perder tempo.
+                  <p className="text-left">
+                    Excelência em opções de mercadoria, preços acessíveis e justo, além de um ótimo atendimento, principalmente do Marcos que foi muito prestativo na hora de tirar algumas dúvidas e dar as orientações que eu precisava!
                   </p>
                 </div>
               </div>
 
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Estoque Grande
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente5.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente WWillian Almeida"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Willian Almeida
                   </h3>
-                  <p className="text-center">
-                    Com um estoque sempre <br /> completo, você encontra tudo o{" "}
-                    <br /> que precisa, sem perder tempo.
+                  <p className="text-left">
+                    Marcos foi muito atencioso e solicito aos pedidos feitos, precisamos de um material que faltou e recemos já no dia seguinte.Recomendo!
                   </p>
                 </div>
               </div>
 
               <div className="h-[400px] xl:w-[470px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Acompanhamento da Obra
+                <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
+                  <Image src={"/cliente6.png"} className="mx-auto" width={68} height={68} alt={"Imagem Cliente Mayara Matos"} />
+                  <h3 className="mt-4 text-xl text-left font-semibold">
+                    Mayara Matos
                   </h3>
-                  <p className="text-center">
-                    Ajudamos a calcular a quantidade <br /> ideal de material,
-                    evitando <br />
-                    desperdícios para sua obra.
+                  <p className="text-left">
+                    Achei tudo o que precisava, muitas opções e o atendimento excepcional. Parabéns e obrigada ao marcos que me atendeu com muita simpatia e um bom trabalho!!
                   </p>
                 </div>
               </div>
             </div>
 
-            <button className="bg-[#0D6B4A] text-white px-10 py-4 text-lg font-bold rounded-md hover:bg-[#FF6600] transition duration-200">
+            <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]">
               Tenho Interesse!
+              <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+                →
+              </span>
+              <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
           </section>
 
@@ -254,8 +258,12 @@ export default function Home() {
               Se você ficou com alguma dúvida, sobre como podemos te <br />{" "}
               ajudar, clique no botão abaixo para conversarmos.
             </p>
-            <button className="bg-[#0D6B4A] text-white px-10 py-4 text-lg font-bold rounded-md hover:bg-[#FF6600] transition duration-200">
+            <button className="relative overflow-hidden bg-[#0D6B4A] mx-auto text-white z-10 px-6 py-4 text-base text-center font-bold rounded-md transition-colors duration-300 gap-4 flex items-center justify-center group w-[220px]">
               Tenho Dúvidas!
+              <span className="absolute right-4 transform translate-x-0 opacity-0 transition-all z-10 duration-300 group-hover:translate-x-2 group-hover:opacity-100">
+                →
+              </span>
+              <span className="absolute inset-0 bg-[#FF6600] -z-10 w-0 group-hover:w-full transition-all duration-500 ease-in-out"></span>
             </button>
           </section>
 
@@ -266,7 +274,7 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=5519995820350&text=Ol%C3%A1,%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20seus%20produtos!!"
             >
               <button
-                className="bg-[#0D6B4A] hover:bg-[#20c157] hover:scale-110 duration-150 transition text-white py-3 px-3 rounded-full shadow-lg"
+                className="bg-[#0D6B4A] hover:bg-[#FF6600] hover:scale-110 duration-150 transition text-white py-3 px-3 rounded-full shadow-lg"
                 aria-label="Whatsapp Flutuante"
               >
                 <Image

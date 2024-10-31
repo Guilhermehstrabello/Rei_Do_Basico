@@ -31,7 +31,7 @@ export default function Footer() {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_48_1272)">
+                  <g clipPath="url(#clip0_48_1272)">
                     <path
                       d="M9.78669 19V12.4308H7.99976V10.0656H9.78669V8.04535C9.78669 6.45785 10.8422 5 13.2745 5C14.2592 5 14.9874 5.09177 14.9874 5.09177L14.93 7.30049C14.93 7.30049 14.1874 7.29347 13.377 7.29347C12.4999 7.29347 12.3594 7.68638 12.3594 8.33851V10.0656H14.9998L14.8849 12.4308H12.3594V19H9.78669Z"
                       fill="#fff"
@@ -118,7 +118,7 @@ export default function Footer() {
 
           <div className="flex flex-col gap-5 text-center xl:text-start text-xl">
             <h3 className="text-white font-bold">Localização</h3>
-            <a target="_blank" href="">
+            <a target="_blank" href="https://www.google.com/maps/place/Rei+do+B%C3%A1sico+-+Materiais+de+Constru%C3%A7%C3%A3o+em+Indaiatuba/@-23.1074765,-47.2303024,15z/data=!4m2!3m1!1s0x0:0xafaddd84a7fcb6a9?sa=X&ved=1t:2428&ictx=111">
               <Image
                 src="/localizacao_reidobasico.png"
                 alt="Localização Rei Do Básico"
@@ -127,6 +127,7 @@ export default function Footer() {
                 className="hover:scale-110 duration-150"
               />
             </a>
+            <p className="text-white text-base">Av. Eng. Fábio Roberto Barnabé, 4634 - Jardim Colonial, Indaiatuba - SP, 13348-670</p>
           </div>
         </div>
       </footer>

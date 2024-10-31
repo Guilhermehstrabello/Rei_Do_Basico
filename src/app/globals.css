@@ -16,12 +16,26 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 6px; /* Largura do scroll */
+}
+
+/* Estiliza o "polegar" do scroll */
+::-webkit-scrollbar-thumb {
+  background-color: #ff6600b4; /* Cor do "polegar" do scroll */
+}
+
+
 html{
   scroll-behavior: smooth;
 }
 
 body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   color: var(--foreground);
   background: var(--background);
   font-family: "Montserrat", sans-serif;
+  user-select: none;
 }
