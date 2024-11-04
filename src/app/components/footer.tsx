@@ -89,22 +89,22 @@ export default function Footer() {
 
           <div className="flex flex-col gap-5 text-center xl:text-start">
             <h3 className="text-white font-bold text-xl">Seções</h3>
-            <a href="#sobre">
+            <a href="#inicio">
               <p className="text-white hover:underline hover:scale-110 hover:text-[#FF6600] duration-100">
                 Início
               </p>
             </a>
-            <a href="#porque">
+            <a href="#produtos">
               <p className="text-white hover:underline hover:scale-110 hover:text-[#FF6600] duration-100">
                 Produtos
               </p>
             </a>
-            <a href="#depoimentos">
+            <a href="#diferenciais">
               <p className="text-white hover:underline hover:scale-110 hover:text-[#FF6600] duration-100">
                 Diferenciais
               </p>
             </a>
-            <a href="#faq">
+            <a href="#depoimentos">
               <p className="text-white hover:underline hover:scale-110 hover:text-[#FF6600] duration-100">
                 Depoimentos
               </p>
