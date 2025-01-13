@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 export const metadata: Metadata = {
   title: "Rei do Básico",
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={montserrat.className}>
+      <GoogleTagManager gtmId="GTM-K5PZ4GDB" />
         {children}
       </body>
     </html>
