@@ -116,20 +116,7 @@ export default function Home() {
               <h2 className="text-5xl font-bold text-white">Diferenciais</h2>
             </div>
 
-            <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Card 1 */}
-              <div className="h-[400px] xl:w-[460px] w-[320px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
-                <div className="rounded-lg flex flex-col justify-center items-center gap-3">
-                  <h3 className="mt-4 text-2xl font-semibold">
-                    Horário Extendido
-                  </h3>
-                  <p className="text-center">
-                    Estamos abertos das 8h às 20h, <br /> facilitando suas
-                    compras quando for <br /> mais conveniente para você.
-                  </p>
-                </div>
-              </div>
-
+            <div className="flex justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* Card 2 */}
               <div className="h-[400px] xl:w-[460px] w-[320px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="rounded-lg flex flex-col justify-center items-center gap-3">
