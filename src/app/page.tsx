@@ -13,12 +13,12 @@ export default function Home() {
           <Navbar />
 
           <section id="inicio" className="space-y-10 my-32 px-10 text-center">
-            <h1 className="lg:text-7xl text-3xl font-bold text-center">
+            <h1 className="lg:text-7xl text-5xl font-bold text-center">
               <span className="text-[#FED700]">Do Básico ao Avançado, </span>{" "}
               Nós <br /> Temos{" "}
               <span className="text-[#FED700]">Tudo para Sua Obra!</span>
             </h1>
-            <p className="lg:text-2xl text-sm md:w-full w-[90%] mx-auto">
+            <p className="lg:text-2xl text-base md:w-full w-[90%] mx-auto">
               Cada Material Pensado para Oferecer Qualidade e <br /> Eficiência
               em Todas as Fases da sua Obra.
             </p>
@@ -42,7 +42,7 @@ export default function Home() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
               {/* Card 1 */}
-              <div className="h-[400px] xl:w-[350px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[350px] w-72 flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="rounded-lg">
                   <Image
                     src="/grupo1.png"
