@@ -12,13 +12,13 @@ export default function Home() {
         <div className="w-full max-w-[1440px] mx-[100px]">
           <Navbar />
 
-          <section id="inicio" className="space-y-12 my-32 px-10 text-center">
-            <h1 className="lg:text-7xl text-4xl font-bold text-center">
+          <section id="inicio" className="space-y-10 my-32 px-10 text-center">
+            <h1 className="lg:text-7xl text-3xl font-bold text-center">
               <span className="text-[#FED700]">Do Básico ao Avançado, </span>{" "}
               Nós <br /> Temos{" "}
               <span className="text-[#FED700]">Tudo para Sua Obra!</span>
             </h1>
-            <p className="lg:text-2xl text-base md:w-full w-64 mx-auto">
+            <p className="lg:text-2xl text-sm md:w-full w-[90%] mx-auto">
               Cada Material Pensado para Oferecer Qualidade e <br /> Eficiência
               em Todas as Fases da sua Obra.
             </p>
@@ -116,9 +116,9 @@ export default function Home() {
               <h2 className="text-5xl font-bold text-white">Diferenciais</h2>
             </div>
 
-            <div className="flex justify-center items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="flex lg:flex-row flex-col justify-center items-center gap-6">
               {/* Card 2 */}
-              <div className="h-[400px] xl:w-[460px] w-[320px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[460px] w-[300px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="rounded-lg flex flex-col justify-center items-center gap-3">
                   <h3 className="mt-4 text-2xl font-semibold">
                     Estoque Grande
@@ -131,7 +131,7 @@ export default function Home() {
               </div>
 
               {/* Card 3 */}
-              <div className="h-[400px] xl:w-[460px] w-[320px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[460px] w-[300px] mx-auto flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="rounded-lg flex flex-col justify-center items-center gap-3">
                   <h3 className="mt-4 text-2xl font-semibold md:text-left text-center">
                     Acompanhamento da Obra
@@ -166,7 +166,7 @@ export default function Home() {
             </div>
 
             <div className="grid items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-0 gap-2">
-              <div className="h-[400px] xl:w-[470px] w-[350px]  flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px]  flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente1.png"}
@@ -185,7 +185,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[400px] xl:w-[470px] w-[350px]  flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px]  flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente2.png"}
@@ -203,7 +203,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[400px] xl:w-[470px] w-[350px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente3.png"}
@@ -223,7 +223,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[400px] xl:w-[470px] w-[350px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente4.png"}
@@ -244,7 +244,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[400px] xl:w-[470px] w-[350px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente5.png"}
@@ -264,7 +264,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="h-[400px] xl:w-[470px] w-[350px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
+              <div className="h-[400px] xl:w-[470px] w-[300px] flex flex-col justify-center items-center bg-[#082D21] text-white shadow-lg rounded-lg p-4 transition-colors duration-300 hover:bg-white hover:text-[#082D21]">
                 <div className="px-4 rounded-lg flex flex-col justify-center gap-3">
                   <Image
                     src={"/cliente6.png"}
@@ -299,11 +299,11 @@ export default function Home() {
           </section>
 
           <section id="contato" className="space-y-12 my-32 px-10 py-16 text-center bg-[#082D21]">
-            <h1 className="md:text-5xl text-2xl font-bold text-center">
+            <h1 className="md:text-5xl text-3xl font-bold text-center">
               Está preparado para elevar o nível <br /> da sua construção? Sair
               do <span className="text-[#FF6600]">Básico</span>
             </h1>
-            <p className="md:text-2xl text-base md:w-full w-[90%] mx-auto">
+            <p className="md:text-2xl text-base md:w-full w-[95%] mx-auto">
               Se você ficou com alguma dúvida, sobre como podemos te <br />{" "}
               ajudar, clique no botão abaixo para conversarmos.
             </p>

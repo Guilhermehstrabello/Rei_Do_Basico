@@ -8,10 +8,10 @@ const Accordion: React.FC = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className="w-[100vw] -ml-[calc((100vw-1440px)/2)] flex flex-col items-center bg-gradient-to-b from-[#08221F] via-[#082D22] to-[#08221F] gap-8 py-20">
+    <section className="w-[100vw] lg:-ml-[calc((100vw-1440px)/2)] flex flex-col items-center bg-gradient-to-b from-[#08221F] via-[#082D22] to-[#08221F] gap-8 py-20">
   <div className="w-full max-w-[1440px] px-6 md:px-10 flex flex-col items-center gap-8">
     <button className="py-4" onClick={() => toggleAccordion(0)}>
-      <h2 className="text-[68px] font-bold">Missão</h2>
+      <h2 className="text-[60px] font-bold">Missão</h2>
     </button>
     <div className={`overflow-hidden transition-all duration-500 ${openIndex === 0 ? 'max-h-[200px]' : 'max-h-0'}`}>
       {openIndex === 0 && (
@@ -20,7 +20,7 @@ const Accordion: React.FC = () => {
     </div>
 
     <button className="py-4" onClick={() => toggleAccordion(1)}>
-      <h2 className="text-[68px] font-bold">Valores</h2>
+      <h2 className="text-[60px] font-bold">Valores</h2>
     </button>
     <div className={`overflow-hidden transition-all duration-500 ${openIndex === 1 ? 'max-h-[560px]' : 'max-h-0'}`}>
       {openIndex === 1 && (
@@ -35,7 +35,7 @@ const Accordion: React.FC = () => {
     </div>
 
     <button className="py-4" onClick={() => toggleAccordion(2)}>
-      <h2 className="text-[68px] font-bold">Expertise</h2>
+      <h2 className="text-[60px] font-bold">Expertise</h2>
     </button>
     <div className={`overflow-hidden transition-all duration-500 ${openIndex === 2 ? 'max-h-[260px]' : 'max-h-0'}`}>
       {openIndex === 2 && (
